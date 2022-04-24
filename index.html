@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issuu Form</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header id="encabezado">
+      <div class="container container--logo">
+        <img class="logo__svg" src="./rsc/issuu.svg" alt="Issuu-logo" />
+        <h2 class="logo__name">issuu</h2>
+      </div>
+      <div class="container">
+        <p>Already an user?</p>
+        <a href="index.html">Sign in</a>
+      </div>
+    </header>
+    <!-- Main section -->
+    <div class="main-section">
+      <h1>Create an Isuu Account</h1>
+      <div class="container container--buttons">
+        <div class="social_button__container social_button__container--google">
+          <img
+            class="social-icon"
+            src="./rsc/google-svg.svg"
+            alt="google-icon"
+          /><a class="social_button button--google" href="index.html"
+            >Sign with Google</a
+          >
+        </div>
+        <div class="social_button__container social_button__container--facebook">
+          <img
+            class="social-icon"
+            src="./rsc/facebook-svg.svg"
+            alt="facebook-icon"
+          />
+          <a class="social_button button--facebook" href="index.html"
+            >Continue with Facebook</a
+          >
+        </div>
+      </div>
+      <p>or with email</p>
+      <form action="submit" method="POST">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          placeholder="e.g. john.dor@email.com"
+          id="email"
+        />
+        <label for="password">Password</label>
+        <div class="password-field "><input type="password" name="password" id="password" /><img class="input-icon" src="./rsc/close-cross-eye.svg" alt="hidden"></div>
+        <div class="checkbox">
+          <input type="checkbox" name="terms" id="checkbox" />
+          <label for="terms"
+            >I accept the <a href="index.html">Terms of Service</a> and the <a href="index.html">Profesional Terms of
+            Service</a></label
+          >
+        </div>
+
+        <button class="form-button" type="submit">Create Account</button>
+      </form>
+    </div>
+    <footer id="footer">
+      <p>Issuu Inc.</p>
+      <ul>
+      <li><a href="index.html">Terms</a></li>
+      <li><a href="index.html">Privacy</a></li>
+      <li></li><a href="index.html">DMCA</a></li>
+    </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+#encabezado {
+    @include flexCenter(row, center, space-between);
+    height: 80px;
+    padding: 0px 25px 0px 25px;
+    border-bottom: $gray solid 3px;
+
+    a {
+        color: $blue;
+    }
+}
+.container--logo {
+    @include flexCenter(row, center, center);
+}
+.logo__svg {
+  height: 30px;
+}
+.logo__name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2em;
+}
